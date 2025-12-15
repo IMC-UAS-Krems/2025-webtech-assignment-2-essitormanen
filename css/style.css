@@ -1,10 +1,19 @@
 .book {
-    width: 100px;
+    max-height: 150px;
     padding: 2px;
 }
 
+.toy{
+    max-height: 150px;
+    padding: 2px;
+}
+
+.boardgame{
+    max-height: 150px;
+    padding: 2px;
+}
 #logo{
-    width:300px;
+    height:150px;
     object-fit: cover;
 }
 
@@ -15,6 +24,23 @@
 
 }
 
+#placeholder-item{
+    padding-bottom: 4px;
+    margin-bottom: 5px;
+    background-color: #6db7ba;
+}
+
+#shoppingcart-text{
+    border-top: rgb(85, 111, 116) 3px dashed;
+    border-bottom: rgb(85, 111, 116) 3px dashed;
+}
+
+#cart-items{
+    padding-top: 5px;
+    font-style: italic;
+    font-weight: normal;
+    text-decoration-line: underline;
+}
 header{
     text-align: center;
     border-bottom: 1px dashed green;
@@ -104,3 +130,8 @@ submit {
     color: #ebfeff;
 
 } */
+
+/* SHOPPING CART */
+#cart-item-title{
+    font-size: smaller;
+}

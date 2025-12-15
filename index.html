@@ -4,11 +4,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap demo</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link href="./css/style.css" rel="stylesheet">
   <script src="./js/scripts.js" defer></script>
+  <title>Gift-a-Gift</title>
 </head>
 
 <body>
@@ -38,8 +38,9 @@
                 <div class="card">
                   <div class="card-body">
                     <h5 class="card-title" class="book-product">Comet in Moominland</h5>
-                    <img src="./img/Moomins-Book.jpg" class="book" />
-                    <button class="btn btn-primary" data-mdb-ripple-init onclick="addToShoppingCart(this);">Add to
+                    <img src="./img/Moomins-Book.jpg" class="book item-image" alt="Comet in Moominland Cover" />
+                    <button type="button" class="btn btn-primary add-item-button" data-mdb-ripple-init
+                      onclick="addToShoppingCart(this);">Add to
                       Cart</button>
                   </div>
                 </div>
@@ -48,8 +49,9 @@
                 <div class="card">
                   <div class="card-body">
                     <h5 class="card-title" class="book-product"> Alice in the Wonderland</h5>
-                    <img src="./img/Alice-Book.jpeg" class="book" />
-                    <button class="btn btn-primary" data-mdb-ripple-init onclick="addToShoppingCart(this);">Add to
+                    <img src="./img/Alice-Book.jpeg" class="book item-image" alt="Alice in Wonderland Cover" />
+                    <button type="button" class="btn btn-primary add-item-button" data-mdb-ripple-init
+                      onclick="addToShoppingCart(this);">Add to
                       Cart</button>
                   </div>
                 </div>
@@ -58,18 +60,20 @@
                 <div class="card">
                   <div class="card-body">
                     <h5 class="card-title" class="book-product"> Pippi Longstocking </h5>
-                    <img src="./img/Pippi-Book.jpg" class="book" />
-                    <button class="btn btn-primary" data-mdb-ripple-init onclick="addToShoppingCart(this);">Add to
+                    <img src="./img/Pippi-Book.jpg" class="book item-image" alt="Pippi Longstocking Cover" />
+                    <button type="button" class="btn btn-primary add-item-button" data-mdb-ripple-init
+                      onclick="addToShoppingCart(this);">Add to
                       Cart</button>
                   </div>
                 </div>
               </div>
               <div class="col"> Book 4
-                <div class="card" id="book">
+                <div class="card">
                   <div class="card-body">
                     <h5 class="card-title" class="book-product"> Winnie the Pooh</h5>
-                    <img src="./img/Winnie-The-Pooh-Book.webp" class="book" />
-                    <button class="btn btn-primary" data-mdb-ripple-init onclick="addToShoppingCart(this);">Add to
+                    <img src="./img/Winnie-The-Pooh-Book.webp" class="book item-image" alt="Winnie The Pooh Cover" />
+                    <button type="button" class="btn btn-primary add-item-button" data-mdb-ripple-init
+                      onclick="addToShoppingCart(this);">Add to
                       Cart</button>
                   </div>
                 </div>
@@ -92,41 +96,45 @@
           <div class="container">
             <div class="row">
               <div class="col"> Board Game 1
-                <div class="card" id="boardgame">
+                <div class="card">
                   <div class="card-body">
                     <h5 class="card-title"> Catan </h5>
-                    <img src="./img/Catan-BoardGame.webp" class="book" />
-                    <button class="btn btn-primary" data-mdb-ripple-init onclick="addToShoppingCart(this);">Add to
+                    <img src="./img/Catan-BoardGame.webp" class="boardgame item-image" alt="Catan Board Game" />
+                    <button class="btn btn-primary add-item-button" data-mdb-ripple-init
+                      onclick="addToShoppingCart(this);">Add to
                       Cart</button>
                   </div>
                 </div>
               </div>
               <div class="col"> Board Game 2
-                <div class="card" id="boardgame">
+                <div class="card">
                   <div class="card-body">
                     <h5 class="card-title"> Labyrinth </h5>
-                    <img src="./img/Labyrinth-BoardGame.webp" class="book" />
-                    <button class="btn btn-primary" data-mdb-ripple-init onclick="addToShoppingCart(this);">Add to
+                    <img src="./img/Labyrinth-BoardGame.webp" class="boardgame item-image" alt="Labyrinth Board Game" />
+                    <button type="button" class="btn btn-primary add-item-button" data-mdb-ripple-init
+                      onclick="addToShoppingCart(this);">Add to
                       Cart</button>
                   </div>
                 </div>
               </div>
               <div class="col"> Board Game 3
-                <div class="card" id="boardgame">
+                <div class="card">
                   <div class="card-body">
-                    <h5 class="card-title"> Rummikub</h5>
-                    <img src="./img/Rummikub-BoardGame.webp" class="book" />
-                    <button class="btn btn-primary" data-mdb-ripple-init onclick="addToShoppingCart(this);">Add to
+                    <h5 class="card-title"> Rummikub </h5>
+                    <img src="./img/Rummikub-BoardGame.webp" class="boardgame item-image" alt="Rummikub Board Game" />
+                    <button type="button" class="btn btn-primary add-item-button" data-mdb-ripple-init
+                      onclick="addToShoppingCart(this);">Add to
                       Cart</button>
                   </div>
                 </div>
               </div>
               <div class="col"> Board Game 4
-                <div class="card" id="boardgame">
+                <div class="card">
                   <div class="card-body">
                     <h5 class="card-title"> Monopoly </h5>
-                    <img src="./img/Monopoly-Boardgame.webp" class="book" />
-                    <button class="btn btn-primary" data-mdb-ripple-init onclick="addToShoppingCart(this);">Add to
+                    <img src="./img/Monopoly-Boardgame.webp" class="boardgame item-image" alt="Monopoly Board Game" />
+                    <button type="button" class="btn btn-primary add-item-button" data-mdb-ripple-init
+                      onclick="addToShoppingCart(this);">Add to
                       Cart</button>
                   </div>
                 </div>
@@ -152,9 +160,10 @@
               <div class="col"> Toy 1
                 <div class="card" id="toy">
                   <div class="card-body">
-                    <h5 class="card-title"> Train </h5>
-                    <img src="./img/Train-Misc.webp" class="book" />
-                    <button class="btn btn-primary" data-mdb-ripple-init onclick="addToShoppingCart(this);">Add to
+                    <h5 class="card-title"> Train Toy Set</h5>
+                    <img src="./img/Train-Misc.webp" class="toy item-image" alt="Train Toy" />
+                    <button class="btn btn-primary add-item-button" data-mdb-ripple-init
+                      onclick="addToShoppingCart(this);">Add to
                       Cart</button>
                   </div>
                 </div>
@@ -163,8 +172,9 @@
                 <div class="card" id="toy">
                   <div class="card-body">
                     <h5 class="card-title"> Farm Toy Set</h5>
-                    <img src="./img/Farm-Misc.webp" class="book" />
-                    <button class="btn btn-primary" data-mdb-ripple-init onclick="addToShoppingCart(this);">Add to
+                    <img src="./img/Farm-Misc.webp" class="toy item-image" alt="Farm Toy Set" />
+                    <button type="button" class="btn btn-primary add-item-button" data-mdb-ripple-init
+                      onclick="addToShoppingCart(this);">Add to
                       Cart</button>
                   </div>
                 </div>
@@ -173,8 +183,9 @@
                 <div class="card" id="toy">
                   <div class="card-body">
                     <h5 class="card-title"> Schleich Set</h5>
-                    <img src="./img/Schleich-Misc.webp" class="book" />
-                    <button class="btn btn-primary" data-mdb-ripple-init onclick="addToShoppingCart(this);">Add to
+                    <img src="./img/Schleich-Misc.webp" class="toy item-image" alt="Schleich Set" />
+                    <button type="button" class="btn btn-primary add-item-button" data-mdb-ripple-init
+                      onclick="addToShoppingCart(this);">Add to
                       Cart</button>
                   </div>
                 </div>
@@ -182,9 +193,10 @@
               <div class="col"> Toy 4
                 <div class="card" id="toy">
                   <div class="card-body">
-                    <h5 class="card-title"> Playkitchen</h5>
-                    <img src="./img/Playkitchen-Misc.webp" class="book" />
-                    <button class="btn btn-primary" data-mdb-ripple-init onclick="addToShoppingCart(this);">Add to
+                    <h5 class="card-title">Playkitchen Set</h5>
+                    <img src="./img/Playkitchen-Misc.webp" class="toy item-image" alt="Playkitchen Set" />
+                    <button type="button" class="btn btn-primary add-item-button" data-mdb-ripple-init
+                      onclick="addToShoppingCart(this);">Add to
                       Cart</button>
                   </div>
                 </div>
@@ -198,19 +210,39 @@
   </div>
   <!-- Shopping Cart: Taken from https://getbootstrap.com/docs/5.3/components/offcanvas/-->
   <div class="shoppingcart">
-    <div id="viewShoppingCartButton"> 
-    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-      aria-controls="offcanvasRight">View Shopping Cart</button>
+    <div id="viewShoppingCartButton">
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight">View Shopping Cart</button>
       <button class="btn btn-primary" onclick="displayCheckout(checkout)"> Proceed to Checkout </button>
     </div>
+    
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasRightLabel">Shopping Cart</h5>
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">
+
+          <div class="cart-row">
+            <div id="placeholder-item">
+              <h5><b><i>Placeholder</i></b> </h5>
+              <div class="cart-item cart-column">
+                <img src="./img/Moomins-Book.jpg" alt="Comet in Moominland" width="60">
+                <span class="cart-item-title">Comet in Moominland</span>
+              </div>
+              <span class="cart-price cart-column"> 10.00€</span>
+              <div class="cart-quantity cart-column">
+                <input class="cart-quantity-input" type="number" value="1">
+                <button class="btn btn-danger" type="button">REMOVE</button>
+              </div>
+            </div>
+          </div>
+          <div class="offcanvas-body" id="shoppingcart-text">
+            Shopping Cart Content goes here:
+
+          </div>
+          <div id="cart-items" >
+            
+          </div>
+        </h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body" id="shoppingcart">
-        Shopping Cart Content goes here
-        
       </div>
     </div>
   </div>
@@ -250,7 +282,7 @@
           </div>
         </fieldset>
         <div id="submit">
-        <input type="submit" value="Send"/>
+          <input type="submit" value="Send" />
         </div>
       </fieldset>
     </form>

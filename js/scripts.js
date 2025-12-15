@@ -1,5 +1,5 @@
 function addToShoppingCart(clickedButton){
-    console.log("Product Added to Cart")
+    // console.log("Product Added to Cart")
     // const productTitle = document.getElementById("book-product");
     // const productTitle = document
     //                         .getElementById("books")
@@ -31,13 +31,41 @@ function addToShoppingCart(clickedButton){
     // //add section to #shoppingcart
     // document.getElementById("shoppingcart").appendChild(ol);
 
-    console.log(clickedButton)
-    const shoppingCart = document
-                            .getElementById("books")
-                            .getElementsByTagName("h5")
+    // console.log(clickedButton)
+    const addToCartButtons = document.getElementsByClassName("add-item-button")
+    for (let i = 0; i < addToCartButtons.length; i++){
+        const button = addToCartButtons[i]
+        button.addEventListener('click', addToCartClicked)
+        console.log(i)
+    }
 
+    //Check if it can be inside the addToShoppinCart function?!
+    function addToCartClicked(event){
+        const button = event.target
+        const shopItem = button.parentElement
+        console.log(shopItem)
+        const title = shopItem.getElementsByClassName("card-title")[0].innerText
+        const imageSrc = shopItem.getElementsByClassName("item-image")[0].src
+        console.log(title, imageSrc)
+        addItemToCart(title, imageSrc)
+    }
+
+    function addItemToCart(title, imageSrc){
+        const cartRow = document.createElement("div")
+        cartRow.innerText = title
+        const cartItems = document.getElementById("cart-items")
+        cartItems.appendChild(cartRow)
+        console.log(cartItems)
+    }
+    // const shoppingCart = document
+    //                         .getElementById("books")
+    //                         .getElementsByTagName("h5")
+    // for (const i = 0; i < shoppingCart.length; i++){
+    //     const item = shoppingCart[i]
+    //     console.log(item)
+    // }
                             
-    console.log(shoppingCart)
+    // console.log(shoppingCart)
 
     // const sec = document.createElement("section")
     // const h3 = document.createElement("h3");

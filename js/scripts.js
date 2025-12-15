@@ -1,4 +1,6 @@
 function addToShoppingCart(clickedButton){
+
+    //This was what I tried before giving up and looking it up on Youtube
     // console.log("Product Added to Cart")
     // const productTitle = document.getElementById("book-product");
     // const productTitle = document
@@ -12,9 +14,7 @@ function addToShoppingCart(clickedButton){
                             // .getElementsByClassName("card")
                             // .getElementsByClassName("card-body")
                             // .getElementsByClassName("book-product");
-    
-
-        
+     
     // console.log(productTitle)
 
     //create a section element
@@ -32,6 +32,8 @@ function addToShoppingCart(clickedButton){
     // document.getElementById("shoppingcart").appendChild(ol);
 
     // console.log(clickedButton)
+
+    //The following code I did while watching a Youtube tutorial https://www.youtube.com/watch?v=YeFzkC2awTM&t=1070s
     const addToCartButtons = document.getElementsByClassName("add-item-button")
     for (let i = 0; i < addToCartButtons.length; i++){
         const button = addToCartButtons[i]
@@ -39,7 +41,6 @@ function addToShoppingCart(clickedButton){
         console.log(i)
     }
 
-    //Check if it can be inside the addToShoppinCart function?!
     function addToCartClicked(event){
         const button = event.target
         const shopItem = button.parentElement
